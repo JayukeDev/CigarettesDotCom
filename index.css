@@ -27,7 +27,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 40px;
+    height: 60px;
     z-index: 5;
     opacity: 60%;
 }
@@ -45,16 +45,16 @@ body {
 }
 
 .nav-icon img {
-    width: 25px;
-    height: 25px;
+    width: 44px;
+    height: 44px;
 }
 
 .nav-icon img:hover {
     transform: scale(1.05);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-    width: 27px;
-    height: 27px;
+    width: 42px;
+    height: 42px;
 }
 
 .featured {
@@ -133,6 +133,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    color:rgb(103, 102, 100);
 }
 
 .showcase-top iframe {
@@ -146,5 +147,12 @@ body {
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
+    color:rgb(103, 102, 100);
+}
 
+.showcase-slides iframe {
+    padding: 10px;
+    background: rgba(17, 17, 17, 0.518);
+    border-radius: 2px;
+    z-index: 2;
 }
