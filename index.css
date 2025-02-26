@@ -1,8 +1,10 @@
 html,
 body {
     margin: 0;
-    height: 200%;
+    height: 120%;
     background-color: rgb(28, 23, 23);
+    font-size: 25px;
+    font-family: "Courier New";
 }
 
 .backdrop {
