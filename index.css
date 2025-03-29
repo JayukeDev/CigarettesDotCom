@@ -1,10 +1,10 @@
 html,
 body {
     margin: 0;
-    height: 120%;
     background-color: rgb(28, 23, 23);
     font-size: 25px;
-    font-family: "Courier New";
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    cursor: url("./static/cursor.png"), auto;
 }
 
 .backdrop {
@@ -12,6 +12,7 @@ body {
     top: 0;
     left: 0;
     height: 100%;
+    width: 100%;
     opacity: 20%;
 }
 
@@ -25,7 +26,7 @@ body {
     position: sticky;
     top: 0;
     overflow: hidden;
-    background-color: rgb(127, 90, 90);
+    background-color: rgb(164, 29, 33);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -75,44 +76,49 @@ body {
     object-fit: cover;
     /* Ensures it covers the space while maintaining proportions */
     z-index: 2;
-    opacity: 35%;
+    opacity: 45%;
 }
 
-.featured-logo {
+.featured-timer {
     position: absolute;
-    top: 50%;
+    top: 10%;
+    left: 40%;
+    color: white;
+
+    border-radius: 25px;
+    border: 2px solid rgb(138, 123, 84);
+    color: rgb(235, 235, 235);
+    padding: 5px;
+}
+
+.featured-buttons {
+    position: absolute;
+    top: 35%;
     left: 50%;
-    width: 70%;
+    width: 80%;
     /* Adjust size as needed */
     height: auto;
-    transform: translate(-50%, -50%);
-    /* Centers the overlay */
-
-    opacity: 0;
-    animation: frameAnimation 2s infinite;
+    transform: translate(-50%, -20%);
     z-index: 2;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    visibility: hidden;
 }
 
-.featured-logo:nth-child(1) {
-    animation-delay: 0s;
+.outline-button {
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px solid rgb(138, 123, 84);
+    color: rgb(235, 235, 235);
+
+    opacity: 65%;
 }
 
-.featured-logo:nth-child(2) {
-    animation-delay: .5s;
+.outline-button:hover {
+    border: 3px solid rgb(160, 146, 111);
 }
-
-.featured-logo:nth-child(3) {
-    animation-delay: 1s;
-}
-
-.featured-logo:nth-child(4) {
-    animation-delay: 1.5;
-}
-@keyframes frameAnimation {
-    0% { opacity: .5; }
-    33% { opacity: 1; }
-    66% { opacity: .5; }
-  }
 
 .featured::after {
     content: "";
@@ -152,9 +158,72 @@ body {
     color:rgb(103, 102, 100);
 }
 
+.video-thumbnails {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
 .showcase-slides iframe {
     padding: 10px;
     background: rgba(17, 17, 17, 0.518);
     border-radius: 2px;
     z-index: 2;
+}
+
+.merch {
+    background-color: rgba(164, 29, 33, 0.8);
+    padding-bottom: 25px;
+}
+
+.merch-box:hover {
+    background-color: rgb(52, 50, 50, .4);
+    border-radius: 6px;
+}
+
+.merch-box:active {
+    background-color: rgba(39, 38, 38, 0.4);
+    border-radius: 6px;
+}
+
+.stream { 
+    background-color: white;
+    width: 500px;
+    height: 700px;
+    margin: auto;
+
+    border-radius: 3px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.stream img {
+    width: 100%;
+}
+
+.stream-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    border-radius: 5px;
+    
+}
+
+.stream-box-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    margin: 10px;
+    margin-top: 40px;
+}
+
+.stream-box-icon img {
+    width: 112px;
+    height: 112px;
 }

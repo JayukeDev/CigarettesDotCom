@@ -1,36 +1,87 @@
 <html>
-    <link rel="stylesheet" href="./index.css">
-    <img class="backdrop" src="./static/dark-grunge-texture.jpg" >
-    <div class="flex-container">
-        <div class="topbar">
-            <div class="nav-spacer"></div>
-            <div class="nav-icon"><a target="_blank" href="https://music.apple.com/us/artist/shapethrower/1492842033"><img src="./static/apple.png" alt="Apple Music"/></a></div>
-            <div class="nav-icon"><a target="_blank" href="https://open.spotify.com/artist/26f1osaJQc3nRDFJVrOfKp"><img src="./static/spotify.png" alt="Spotify"/></a></div>
-            <div class="nav-icon"><a target="_blank" href="https://shapethrowerma.bandcamp.com/"><img src="./static/bandcamp.png" alt="bandcamp."/></a></div>
-            <div class="nav-icon"><a target="_blank" href="https://www.youtube.com/channel/UCPdAf2pHpHSanbYZ8QTo-qg"><img src="./static/youtube.png" alt="YouTube"/></a></div>
-            <div class="nav-icon"><a target="_blank" href="https://www.instagram.com/shapethrowerma/"><img src="./static/insta.png" alt="Instagram"/></a></div>
-        </div>
-        <div class="featured">
-            <img class="featured-album" src="./static/album-cropped.jpeg">
-            <img class="featured-logo" src="./static/name-frame1.png">
-            <img class="featured-logo" src="./static/name-frame2.png">
-            <img class="featured-logo" src="./static/name-frame3.png">
-            <img class="featured-logo" src="./static/name-frame2.png">
-        </div>
-        <div class="showcase">
-            <div class="showcase-top"><iframe width="560" height="315" src="https://www.youtube.com/embed/LiXx65xKjzk?si=Ob4UnAImPDy22986" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-            <span class="showcase-top label">[OUT NOW - DEATH DEALER - GRIEF CYCLE]</span>
-            <div class="showcase-slides">
-                
-                <iframe id="sc1" width="200" height="113" src="https://www.youtube.com/embed/T6dOcmDnEPc?si=lTl8Qran8XDAWBxP?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe id="sc2" width="200" height="113" src="https://www.youtube.com/embed/jV2OM8-YLT4?si=qEE8jwlzWvripoQE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe id="sc3" width="200" height="113" src="https://www.youtube.com/embed/hj8mDdZQr7M?si=cPrK5TdWfvLH_C0M?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class="showcase-slides labels">
-                <span>[SOILED HANDS]</span>
-                <span>[LIVE]</span>
-                <span>[BURY ME]</span>
-            </div>
+<link rel="stylesheet" href="./index.css">
+<script src="./index.js"></script>
+<img class="backdrop" src="./static/dark-grunge-texture.jpg">
+<div class="flex-container">
+    <div class="topbar">
+        <div class="nav-spacer"></div>
+        <div class="nav-icon"><a target="_blank" href="https://music.apple.com/us/artist/shapethrower/1492842033"><img
+                    src="./static/apple.png" alt="Apple Music" /></a></div>
+        <div class="nav-icon"><a target="_blank" href="https://open.spotify.com/artist/26f1osaJQc3nRDFJVrOfKp"><img
+                    src="./static/spotify.png" alt="Spotify" /></a></div>
+        <div class="nav-icon"><a target="_blank" href="https://shapethrowerma.bandcamp.com/"><img
+                    src="./static/bandcamp.png" alt="bandcamp." /></a></div>
+        <div class="nav-icon"><a target="_blank" href="https://www.youtube.com/channel/UCPdAf2pHpHSanbYZ8QTo-qg"><img
+                    src="./static/youtube.png" alt="YouTube" /></a></div>
+        <div class="nav-icon"><a target="_blank" href="https://www.instagram.com/shapethrowerma/"><img
+                    src="./static/insta.png" alt="Instagram" /></a></div>
+    </div>
+    <div class="featured">
+        <img class="featured-album" src="./static/singleart.png">
+        <div class="featured-timer" id="featured-timer"></div>
+        <div class="featured-buttons" id="featured-buttons">
+            <a href="#stream">
+                <div class="outline-button">STREAM</div>
+            </a>
+            <a href="#merch">
+                <div class="outline-button">SHOP</div>
+            </a>
         </div>
     </div>
+</div>
+<div class="showcase">
+    <span class="showcase-top label">REPLACE THIS WITH THE VID FOR CIGS VVV</span>
+    <div class="showcase-top"><iframe height="600px" width="100%"
+            src="https://www.youtube.com/embed/LiXx65xKjzk?si=Ob4UnAImPDy22986" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+</div>
+<div class="showcase merch" id="merch">
+    <span class="showcase-top label">ROLL UP DRIPPED OUT</span>
+    <div class="showcase-slides">
+        <div class="merch-box"><img width="250px" src="./static/COWBOY TEE.png"></div>
+        <div class="merch-box"><img width="250px" src="./static/WEBSITE TEE 1 mock.png"></div>
+    </div>
+    <div class="showcase-slides labels">
+        <div class="outline-button">VIEW PRODUCT</div>
+        <div class="outline-button">VIEW PRODUCT</div>
+    </div>
+</div>
+
+<!-- vids  -->
+<div class="showcase-slides video-thumbnails">
+    <iframe height="250px" width="500px" id="sc1" src="https://www.youtube.com/embed/T6dOcmDnEPc?si=lTl8Qran8XDAWBxP?controls=0"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe height="250px" width="500px" id="sc2" src="https://www.youtube.com/embed/LiXx65xKjzk?si=Ob4UnAImPDy22986?controls=0"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<!-- streams -->
+<div class="stream" id="stream">
+    <img src="./static/COWBOY TEE_left chest.png">
+
+    <div class="stream-box">
+        <div class="stream-box-column">
+            <div class="stream-box-icon"><a target="_blank"
+                    href="https://music.apple.com/us/artist/shapethrower/1492842033"><img src="./static/apple.png"
+                        alt="Apple Music" /></a></div>
+            <div class="stream-box-icon"><a target="_blank"
+                    href="https://open.spotify.com/artist/26f1osaJQc3nRDFJVrOfKp"><img src="./static/spotify.png"
+                        alt="Spotify" /></a></div>
+        </div>
+        <div class="stream-box-column">
+            <div class="stream-box-icon"><a target="_blank" href="https://shapethrowerma.bandcamp.com/"><img
+                        src="./static/bandcamp.png" alt="bandcamp." /></a></div>
+            <div class="stream-box-icon"><a target="_blank"
+                    href="https://www.youtube.com/channel/UCPdAf2pHpHSanbYZ8QTo-qg"><img src="./static/youtube.png"
+                        alt="YouTube" /></a></div>
+        </div>
+    </div>
+</div>
+</div>
+
 </html>
