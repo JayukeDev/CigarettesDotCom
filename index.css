@@ -5,6 +5,7 @@ body {
     font-size: 25px;
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
     cursor: url("./static/cursor.png"), auto;
+    letter-spacing: 3px;
 }
 
 .backdrop {
@@ -13,7 +14,7 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    opacity: 20%;
+    opacity: 10%;
 }
 
 .flex-container {
@@ -77,6 +78,12 @@ body {
     /* Ensures it covers the space while maintaining proportions */
     z-index: 2;
     opacity: 45%;
+    box-shadow: 0 0 120px 20px black;
+}
+@media only screen and (max-width: 800px) {
+    .featured-album {
+        max-height: 1280px;
+    }
 }
 
 .featured-timer {
@@ -104,7 +111,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    visibility: hidden;
 }
 
 .outline-button {
