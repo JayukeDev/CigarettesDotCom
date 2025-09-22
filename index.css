@@ -9,6 +9,11 @@ body {
     width: 100vw;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .backdrop {
     position: fixed;
     top: 0;
