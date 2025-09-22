@@ -6,6 +6,7 @@ body {
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
     cursor: url("./static/cursor.png"), auto;
     letter-spacing: 3px;
+    width: 100vw;
 }
 
 .backdrop {
@@ -24,6 +25,7 @@ body {
 }
 
 .topbar {
+    width: 102vw;
     position: sticky;
     top: 0;
     overflow: hidden;
@@ -62,7 +64,7 @@ body {
 }
 
 .featured {
-    width: 100%;
+    width: 102vw;
     position: relative;
     display: flex;
     justify-content: center;
@@ -133,7 +135,7 @@ body {
 }
 
 .showcase {
-    width: 100%;
+    width: 100vw;
     position: relative;
     margin-top: 50px;
 
@@ -143,11 +145,10 @@ body {
 }
 
 .showcase-top {
-    margin: 20px;
-    width: 100%;
     display: flex;
     justify-content: center;
     color:rgb(103, 102, 100);
+    margin-left: 15px;
 }
 
 .showcase-top iframe {
@@ -182,6 +183,8 @@ body {
 .merch {
     background-color: rgba(164, 29, 33, 0.8);
     padding-bottom: 25px;
+    width: 102vw;
+    padding-top: 25px;
 }
 
 .merch-box:hover {
