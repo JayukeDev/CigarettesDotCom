@@ -7,6 +7,7 @@ body {
     cursor: url("./static/cursor.png"), auto;
     letter-spacing: 3px;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 a {
@@ -30,7 +31,6 @@ a {
 }
 
 .topbar {
-    width: 102vw;
     position: sticky;
     top: 0;
     overflow: hidden;
@@ -69,7 +69,6 @@ a {
 }
 
 .featured {
-    width: 102vw;
     position: relative;
     display: flex;
     justify-content: center;
@@ -91,18 +90,35 @@ a {
     .featured-album {
         max-height: 1280px;
     }
+    body {
+        width: 102vw;
+    }
+    .merch {
+        width: 102vw;
+    }
+    .topbar {
+        width: 102vw;
+    }
+    .featured {
+        width: 102vw;
+    }
+
 }
 
 .featured-timer {
     position: absolute;
     top: 10%;
-    left: 40%;
+    left: auto;
+    align-content: center;
     color: white;
-
+    z-index: 10;
     border-radius: 25px;
     border: 2px solid rgb(138, 123, 84);
     color: rgb(235, 235, 235);
     padding: 5px;
+    font-size: 70px;
+
+    opacity: 80%;
 }
 
 .featured-buttons {
@@ -188,7 +204,6 @@ a {
 .merch {
     background-color: rgba(164, 29, 33, 0.8);
     padding-bottom: 25px;
-    width: 102vw;
     padding-top: 25px;
 }
 
